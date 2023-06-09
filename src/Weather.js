@@ -10,6 +10,7 @@ export default function Weather() {
     setLoaded(true);
     console.log(response.data);
     setWeather({
+      name: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -41,6 +42,7 @@ export default function Weather() {
       <div>
         {form}
         <ul>
+          <li>City: {weather.name}</li>
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
           <li>Wind: {Math.round(weather.wind)} km/h</li>
