@@ -8,8 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Weather />
-
-        <fotter>
+        <footer>
           <p>
             This project has been created by Sanja Plazonić, and it is {""}
             <a
@@ -20,7 +19,7 @@ function App() {
               open-sourced on GitHub.
             </a>
           </p>
-        </fotter>
+        </footer>
       </div>
     </div>
   );
