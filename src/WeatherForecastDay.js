@@ -16,6 +16,7 @@ export default function WeatherForecastDay(props) {
         <img
           src={props.data.condition.icon_url}
           alt={props.data.condition.icon_url}
+          style={{ width: "70px", height: "70px" }}
         />
       </div>
       <span className="WeatherForecast-max">
